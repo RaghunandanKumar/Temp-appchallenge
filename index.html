@@ -14,9 +14,11 @@
     <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -27,34 +29,35 @@
         }
         </style-->
 </head>
-<main>
+<main class="container mt-5 flex-fill">
 
-    
-        <fieldset class="mt-4">
-            <label for="guest">Enter your name (2 to 40 characters):</label>
-            <input id="guest" type="text" minlength="2" maxlength="40" value="Eden">
-        </fieldset>
+    <h2>Wanna Findout Largest String?</h2>
+    <div>
+        <p>Please enter two words to findout which one is bigger</p>
+    </div>
+    <fieldset class="mt-4">
+        <label for="guest">Enter your name (2 to 40 characters):</label>
+        <input id="guest" type="text" minlength="2" maxlength="40" value="Eden">
+    </fieldset>
 
-        <fieldset class="mt-4">
-            <label for="firstString">Enter First String: </label>
-            <input id="firstString" type="text">
-            <span id="firstWarning" class="text-danger"></span>
-        </fieldset>
+    <fieldset class="mt-4">
+        <label for="firstString">Enter First Word: </label>
+        <input id="firstString" type="text">
+        <span id="firstWarning" class="text-danger"></span>
+    </fieldset>
 
-        <fieldset class="mt-4">
-            <label for="secondNumber">Enter Second String: </label>
-            <input id="secondNumber" type="text">
-            <span id="secondWarning" class="text-danger"></span>
-        </fieldset>
-        
-            <div>
-        <button id="addition" class="btn btn-primary action_button">Click Me To Know!</button></div>
-       <div>
+    <fieldset class="mt-4">
+        <label for="secondString">Enter Second Word: </label>
+        <input id="secondString" type="text">
+        <span id="secondWarning" class="text-danger"></span>
+    </fieldset>
+
+    <div>
+        <button id="addition" class="btn btn-dark">Click Me To Know!</button></div>
+    <div>
         <p id="result"></p>
-        </div>
+    </div>
 
-    
 </main>
 
 <script src="calc.js"></script>
-  
