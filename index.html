@@ -3,17 +3,20 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>App Challenge</title>
+    <title>String Comparer</title>
 
-    <meta name="description" content="Client-side web app showing local storage">
-    <meta name="author" content="Denise Case">
+    <meta name="description" content="String Comparison">
+    <meta name="author" content="Raghunandan">
 
     <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
-
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -26,34 +29,31 @@
 </head>
 <main>
 
-    <body onload="myFunction()">
+    
         <fieldset class="mt-4">
             <label for="guest">Enter your name (2 to 40 characters):</label>
             <input id="guest" type="text" minlength="2" maxlength="40" value="Eden">
         </fieldset>
 
         <fieldset class="mt-4">
-            <label for="firstNumber">Enter first number (1 to 100):</label>
-            <input id="firstNumber" type="number" min="1" max="100" value=7>
-            <span id="firstWarning" class="text-danger">raghu</span>
+            <label for="firstString">Enter First String: </label>
+            <input id="firstString" type="text">
+            <span id="firstWarning" class="text-danger"></span>
         </fieldset>
 
         <fieldset class="mt-4">
-            <label for="secondNumber">Enter second number (1 to 100):</label>
-            <input id="secondNumber" type="number" min="1" max="100" value="12">
+            <label for="secondNumber">Enter Second String: </label>
+            <input id="secondNumber" type="text">
             <span id="secondWarning" class="text-danger"></span>
         </fieldset>
-        <fieldset class="mt-4">
-                <label for="thirdnumber">Enter third number (1 to 100):</label>
-                <input id="thirdnumber" type="number" min="1" max="100" value="12">
-                <span id="thirdnumber" class="text-danger"></span>
-            </fieldset>
+        
             <div>
-        <button id="addition" class="btn btn-primary action_button">Click me for Addition!</button></div>
-        <button id="average" class="btn btn-primary action_button">Click me for Average!</button>
-        <button id="multiplication" class="btn btn-primary action_button">Click me for Multiplication!</button>
+        <button id="addition" class="btn btn-primary action_button">Click Me To Know!</button></div>
+       <div>
         <p id="result"></p>
-    </body>
+        </div>
+
+    
 </main>
 
 <script src="calc.js"></script>
