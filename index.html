@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>App Challenge</title>
+
+    <meta name="description" content="Client-side web app showing local storage">
+    <meta name="author" content="Denise Case">
+
+    <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!--style>
+        .text-danger{
+            display:none
+        }
+        </style-->
+</head>
+<main>
+
+    <body onload="myFunction()">
+        <fieldset class="mt-4">
+            <label for="guest">Enter your name (2 to 40 characters):</label>
+            <input id="guest" type="text" minlength="2" maxlength="40" value="Eden">
+        </fieldset>
+
+        <fieldset class="mt-4">
+            <label for="firstNumber">Enter first number (1 to 100):</label>
+            <input id="firstNumber" type="number" min="1" max="100" value=7>
+            <span id="firstWarning" class="text-danger">raghu</span>
+        </fieldset>
+
+        <fieldset class="mt-4">
+            <label for="secondNumber">Enter second number (1 to 100):</label>
+            <input id="secondNumber" type="number" min="1" max="100" value="12">
+            <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="mt-4">
+                <label for="thirdnumber">Enter third number (1 to 100):</label>
+                <input id="thirdnumber" type="number" min="1" max="100" value="12">
+                <span id="thirdnumber" class="text-danger"></span>
+            </fieldset>
+            <div>
+        <button id="addition" class="btn btn-primary action_button">Click me for Addition!</button></div>
+        <button id="average" class="btn btn-primary action_button">Click me for Average!</button>
+        <button id="multiplication" class="btn btn-primary action_button">Click me for Multiplication!</button>
+        <p id="result"></p>
+    </body>
+</main>
+
+<script src="calc.js"></script>
+  
